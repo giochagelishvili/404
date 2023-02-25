@@ -1,0 +1,173 @@
+/* 1rem = 10px */
+html {
+    font-size: 62.5%;
+}
+
+/* remove random margin and padding for every element */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* give body the width of device screen and hide x overflow */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* HEADER STYLES */
+
+/* 404 not found text styles */
+#not-found {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+
+    margin: 2rem 0 0 2.4rem;
+}
+
+/* MAIN STYLES */
+
+/* main is separated from header with 6.4rem on mobile devices */
+main
+{
+    margin-top: 6.4rem;
+}
+
+/* center divs inside main-container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* scarecrow illustration width is set to 28.6rem for mobile devices */
+#scarecrow {
+    width: 28.6rem;
+}
+
+/* text is separated from scarecrow by 6rem and has margin-left of 2.4rem */
+.text-container {
+    margin-left: 2.4rem;
+    margin-top: 6rem;
+}
+
+/* bad news text, error message and button text
+have same font-family, font-style and letter spacing */
+#bad-news, #error-message,
+#back-to-homepage
+{
+    font-family: 'Space Mono';
+    font-style: normal;
+    letter-spacing: -0.035em;
+}
+
+#bad-news 
+{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+    color: #333333;
+}
+
+#error-message 
+{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #4F4F4F;
+    margin-top: 3rem;
+}
+
+#back-to-homepage 
+{
+    margin-top: 6.6rem;
+
+    /* button font styles */
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    /* button styles */
+    padding: 2.4rem 4.3rem;
+    border: none;
+    background-color: #333333;
+    transition: 0.2s;
+}
+
+/* FOOTER STYLES */
+
+/* footer is separated from main by 11.4rem */
+footer {
+    margin-top: 11.4rem;
+    padding-bottom: 2.4rem;
+}
+
+/* footer paragraph font styles */
+#footer-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #BDBDBD;    
+}
+
+/* creator anchor styles */
+#creator {
+    font-weight: 700;
+    border-bottom: 1px solid #BDBDBD;
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+/* MEDIA STYLES */
+
+@media screen and (min-width: 1280px) 
+{
+    /* main on desktop has margin-top of 10rem instead of 6.4rem 
+    and has padding of 7.7rem on the sides */
+    main
+    {
+        margin-top: 10rem;
+        padding: 0 7.7rem;
+    }
+
+    /* main container on desktop has flex direction row instead of column 
+    gap between img-container and text-container is 11.8rem */
+    .main-container
+    {
+        flex-direction: row;
+        gap: 11.8rem;
+    }
+
+    /* scarecrow on desktop has width of 54rem instead of 28.6rem */
+    #scarecrow
+    {
+        width: 54rem;
+    }
+
+    /* text container has no margin or padding on desktop */
+    .text-container
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* back to homepage button has hover effect on desktop
+    slightly changes color and cursor is set to pointer while hovering */
+    #back-to-homepage:hover
+    {
+        background-color: #4F4F4F;
+        cursor: pointer;
+    }
+}
